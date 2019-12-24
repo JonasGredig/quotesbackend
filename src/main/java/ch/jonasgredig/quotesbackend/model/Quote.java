@@ -2,6 +2,7 @@ package ch.jonasgredig.quotesbackend.model;
 
 public class Quote {
 
+    private Long id;
     private Long userId;
     private String author;
     private long timestamp;
@@ -15,6 +16,14 @@ public class Quote {
         this.author = author;
         this.timestamp = timestamp;
         this.quoteText = quoteText;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Long getUserId() {
